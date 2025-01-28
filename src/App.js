@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+ 
 
 function App() {
   return (
@@ -12,13 +14,13 @@ function App() {
   </div>
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <img src="" className="d-block w-100" alt="Loading 1"/>
+      <img src="/mix2.jpeg" className="d-block w-100" alt="Loading 1"/>
     </div>
     <div className="carousel-item">
-      <img src="..." className="d-block w-100" alt="Loading 2"/>
+      <img src="/mix2.jpeg" className="d-block w-100" alt="Loading 2"/>
     </div>
     <div className="carousel-item">
-      <img src="..." className="d-block w-100" alt="Loading 3"/>
+      <img src="/mix2.jpeg" className="d-block w-100" alt="Loading 3"/>
     </div>
   </div>
   <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
