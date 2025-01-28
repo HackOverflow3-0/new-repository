@@ -1,38 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
 import React from 'react';
- 
+import {Swiper,SwiperSlide} from "swiper";
 
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+import {EffectCoverflow,Pagination,Navigation  } from "swiper/modules";
+
+import slide_image_1 from "./assets/images/mix1.jpeg";
+import slide_image_2 from "./assets/images/mix2.jpeg";
+import slide_image_3 from "./assets/images/mix3.jpeg";
+import slide_image_4 from "./assets/images/mix4.jpeg";
+import slide_image_5 from "./assets/images/mix5.jpeg";
+import slide_image_6 from "./assets/images/mix6.jpeg";
+ 
 function App() {
   return (
-     <>
-     <div id="carouselExampleIndicators" className="carousel slide">
-  <div className="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div className="carousel-inner">
-    <div className="carousel-item active">
-      <img src="/mix2.jpeg" className="d-block w-100" alt="Loading 1"/>
-    </div>
-    <div className="carousel-item">
-      <img src="/mix2.jpeg" className="d-block w-100" alt="Loading 2"/>
-    </div>
-    <div className="carousel-item">
-      <img src="/mix2.jpeg" className="d-block w-100" alt="Loading 3"/>
-    </div>
-  </div>
-  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Previous</span>
-  </button>
-  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Next</span>
-  </button>
-</div>
-     </>
+    <>
+     <div className="container">
+      <h1 className="heading">Hack Overfow 3.0</h1>
+      <Swiper>
+         
+          <img src={slide_image_1} alt="slide_image" />
+          <img src={slide_image_2} alt="slide_image" />
+          <img src={slide_image_3} alt="slide_image" />
+          <img src={slide_image_4} alt="slide_image" />
+          <img src={slide_image_5} alt="slide_image" />
+          <img src={slide_image_6} alt="slide_image" />
+         
+      </Swiper>
+     </div>
+    </>
+    
   );
 }
 
