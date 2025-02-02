@@ -114,7 +114,7 @@ body {
   width: 70rem !important;
   height: 50rem !important;
   position: relative;
-  opacity: 0.6;
+  opacity: 0.5;
   transition: opacity 0.3s ease-in-out;
   border-radius: 2rem;
   object-fit: cover;
@@ -194,7 +194,7 @@ body {
 }
 
 /*  Mobile View (max-width: 500px) */
-@media (max-width: 500px) {
+@media (min-width: 100px) and (max-width: 700px) {
   .container {
     height: 50rem;
   }
@@ -244,5 +244,51 @@ body {
 
   .swiper-pagination {
     display: none !important;
+  }
+}
+/* Laptop View (1024px - 1366px) */
+@media (min-width: 1024px) and (max-width: 1600px) {
+  .container {
+    height: 65rem;
+    
+    padding: 3rem 1rem;
+  }
+
+  .swiper_container {
+    height: 50rem;
+    width: 140rem !important;
+  }
+
+  .swiper-slide {
+    width: 55rem !important;
+    height: 40rem !important;
+  }
+
+  .swiper-slide img {
+    border: 4px solid #dfeee0;
+  }
+
+  .heading {
+    font-size: 4rem;
+  }
+
+  .slider-controler .swiper-button-next {
+    left: 65% !important;
+    transform: translateX(-65%) !important;
+  }
+
+  .slider-controler .slider-arrow {
+    width: 3rem;
+    height: 3rem;
+    left: 35%;
+  }
+
+  .slider-controler .slider-arrow ion-icon {
+    font-size: 2rem;
+  }
+
+  .swiper-pagination {
+    width: 12rem !important;
+    left: 48% !important;
   }
 }
