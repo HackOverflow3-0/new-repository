@@ -17,7 +17,7 @@ import slide_image_2 from "./assets/images/mix2.jpeg";
 import slide_image_3 from "./assets/images/mix3.jpeg";
 import slide_image_4 from "./assets/images/mix4.jpeg";
 import slide_image_5 from "./assets/images/mix5.jpeg";
-import slide_image_6 from "./assets/images/mix6.jpeg";
+import slide_image_6 from "./assets/images/4u36ktors1la1.png";
  
 function App() {
 
